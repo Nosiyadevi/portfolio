@@ -1,0 +1,170 @@
+/* Global */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f7f9fc;
+  color: #333;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  margin: 10px 0;
+  font-size: 2.2rem;
+}
+
+header nav {
+  margin-top: 15px;
+}
+
+header nav a {
+  color: #fff;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+header nav .btn {
+  background: #6a0dad;   /* purple button */
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #fff;
+}
+
+header nav a:hover {
+  color: #00bfff;  /* sky blue hover */
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 3px solid #6a0dad; /* purple border */
+}
+
+/* Sections */
+section {
+  margin: 40px 0;
+}
+
+h2 {
+  border-left: 4px solid #6a0dad; /* purple line */
+  padding-left: 10px;
+  color: #1a1a1a;
+}
+
+/* About */
+.about-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  width: 200px;
+  border-radius: 12px;
+  flex-shrink: 0;
+}
+
+.about-grid p {
+  flex: 1;
+  line-height: 1.6;
+}
+
+/* Projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border: 2px solid #00bfff; /* sky blue hover */
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #6a0dad; /* purple titles */
+}
+
+/* Skills */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-left: 4px solid #6a0dad; /* purple accent */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Contact */
+#contact p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+#contact i {
+  color: #6a0dad;  /* purple icons */
+  margin-right: 8px;
+}
+
+#contact a {
+  color: #00bfff;  /* sky blue links */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  color: #6a0dad;  /* purple hover */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #1a1a1a;
+  color: #fff;
+}
+
+footer a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #6a0dad;
+}
