@@ -39,21 +39,21 @@ header nav a {
 }
 
 header nav .btn {
-  background: #6a0dad;   /* purple button */
-  padding: 6px 12px;
+  background: #6a0dad;   /* purple */
+  padding: 8px 16px;
   border-radius: 6px;
   color: #fff;
 }
 
 header nav a:hover {
-  color: #00bfff;  /* sky blue hover */
+  color: #00bfff;  /* sky blue */
 }
 
 .profile-img {
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  border: 3px solid #6a0dad; /* purple border */
+  border: 3px solid #6a0dad;
 }
 
 /* Sections */
@@ -62,7 +62,7 @@ section {
 }
 
 h2 {
-  border-left: 4px solid #6a0dad; /* purple line */
+  border-left: 4px solid #6a0dad;
   padding-left: 10px;
   color: #1a1a1a;
 }
@@ -103,12 +103,12 @@ h2 {
 
 .card:hover {
   transform: translateY(-5px);
-  border: 2px solid #00bfff; /* sky blue hover */
+  border: 2px solid #00bfff;
 }
 
 .card h3 {
   margin-top: 0;
-  color: #6a0dad; /* purple titles */
+  color: #6a0dad;
 }
 
 /* Skills */
@@ -125,7 +125,7 @@ h2 {
   padding: 8px 14px;
   border-radius: 6px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  border-left: 4px solid #6a0dad; /* purple accent */
+  border-left: 4px solid #6a0dad;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -138,18 +138,18 @@ h2 {
 }
 
 #contact i {
-  color: #6a0dad;  /* purple icons */
+  color: #6a0dad;
   margin-right: 8px;
 }
 
 #contact a {
-  color: #00bfff;  /* sky blue links */
+  color: #00bfff;
   text-decoration: none;
   font-weight: 500;
 }
 
 #contact a:hover {
-  color: #6a0dad;  /* purple hover */
+  color: #6a0dad;
 }
 
 /* Footer */
@@ -160,11 +160,63 @@ footer {
   color: #fff;
 }
 
-footer a {
-  color: #00bfff;
-  text-decoration: none;
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header nav .btn {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .about-grid {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-photo {
+    width: 150px;
+    margin-bottom: 15px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-footer a:hover {
-  color: #6a0dad;
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 20px 10px;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .about-photo {
+    width: 120px;
+  }
 }
